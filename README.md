@@ -1,0 +1,2 @@
+# FoodRanger_MERN_Stack
+FoodRanger is a local food delivery platform. They partner up with local restaurants and deliver food to the customer’s doorstep. Upon landing on their website a user can search for restaurants by name or pre-defined area. Based on the search result, the user will be shown a list of matching restaurants. I am using the MERN stack to develop this program. Using Node and Express for the backend, React for the frontend, and MongoDB for the database.
