@@ -6,6 +6,15 @@ Based on the search result, the user will be shown a list of matching restaurant
 
 I am using the MERN stack to develop this program.  Using Node and Express for the backend, React for the frontend, and MongoDB for the database.<br>
 
+To run the code,<br>
+**First start the backend server by following command in the terminal,**
+ - cd food-ranger-server
+ - npm start
+
+**Now, start the frontend server by following command in the terminal,**
+- cd food-ranger-client
+- npm start
+
 The endpoints that I have implemented in my REST API includes the following,<br>
 
 <img width="785" alt="Screen Shot 2022-01-09 at 1 57 04 PM" src="https://user-images.githubusercontent.com/67757251/148698833-c7b23e19-ecce-47c4-a60d-89ca9b6b900e.png">
