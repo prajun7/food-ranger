@@ -1,0 +1,79 @@
+/* It consists of common css that we use in multiple pages */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*Global styles*/
+/* Used this class in signUp, Login and in other components where I need to show error*/
+.error-message{
+  position: absolute;  /*This will make sure that this div, won't affect any other divs*/
+  top:17%;
+  left:40%;
+  color: red;
+}
+
+.success-message{
+  position: absolute;  /*This will make sure that this div, won't affect any other divs*/
+  top:17%;
+  left:40%;
+  color: blue;
+}
+
+/*****  For Restaurant's Reviews  *****/
+/* Used in RestaurantDetails.js and UserProfile.js file */
+.reviews-heading{
+  margin-left: 5%;
+  margin-bottom: -1.5%;
+}
+
+.restaurant-reviews{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+.reviews{
+  border : 2px solid grey;
+  box-shadow: 0px 3px 24px bisque;
+  padding: 0px 0px 15px 20px;         /* top right bottom left */
+  margin-top: 2%;
+  width: 80%;
+}
+
+.reviews:hover{
+  box-shadow: 0px 3px 24px rgb(243, 163, 65);
+}
+
+
+/*****  For Restaurant's Orders *****/
+/* Used in RestaurantDetails.js and UserProfile.js file */
+.orders-heading{
+  margin-left: 5%;
+  margin-bottom: -1.5%;
+}
+
+.restaurant-orders{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+.orders{
+  border : 2px solid grey;
+  box-shadow: 0px 3px 24px bisque;
+  padding: 0px 0px 15px 20px;         /* top right bottom left */
+  padding: 1%;
+  margin-top: 2%;
+  width: 80%;
+}
+
+.orders:hover{
+  box-shadow: 0px 3px 24px rgb(243, 163, 65);
+}
+

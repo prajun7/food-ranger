@@ -1,0 +1,243 @@
+/****** RestaurantDetails.js Styles *******/
+
+.restautant-heading{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  
+  .restautant-heading:hover{
+    color: rgb(143, 78, 4);
+  }
+  
+  
+  /***** Button that we press at the beginning to open the pop ups for registering new restaurant *****/
+  .register-restaurant-button{
+    position: absolute;
+    top: 16px;
+    left: 43%;
+    margin-top: -20px;
+    background : rgb(233, 223, 180);
+    color : black;
+    font-size: 1em;
+    padding: 16px 32px;
+    border-radius: 99px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 3px 24px rgb(255, 209, 152);
+  }
+  
+  .register-restaurant-button:hover{
+    box-shadow: 0px 3px 24px rgb(243, 163, 65);
+  }
+  
+  /****** Button that we press at the beginning to open the pop ups for adding menus ******/
+  .menu-restaurant-button{
+    position: absolute;
+    top: 16px;
+    left: 3%;
+    margin-top: -20px;
+    background : rgb(233, 223, 180);
+    color : black;
+    font-size: 1em;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 3px 24px rgb(255, 209, 152);
+  }
+  
+  .menu-restaurant-button:hover{
+    box-shadow: 0px 3px 24px rgb(243, 163, 65);
+  }
+  
+  /*Create Restaurant and add menu*/
+  .popup{
+    position: absolute;   
+    /*position: fixed; will move the content, Try it*/
+    /*position: absolute; will fix the content, Try it*/
+    top: 55%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    background-color: azure;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 24px bisque;
+  }
+  
+  .close-popup{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;    /* Aligns the X in the center of the red background */
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    border: solid 1px black;
+  }
+  
+  .popup h3{
+    color: black;
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .popup label{
+    text-align: left;
+    display: block;
+  }
+  
+  .popup input, .popup textarea {
+   /* width: 100%;     /* Makes the text area box bigger i.e. width of 100% */
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  /****** Button that we press after we input the name, address and email ******/
+  .create-restaurant-button, .add-menu-button{
+    margin-top: 20px;
+    background : rgb(186, 212, 70);
+    color : black;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    padding: 16px 32px;
+    border-radius: 99px;
+    cursor: pointer;
+  }
+  
+  
+  /***** For the address ******/
+  .wrap{
+    margin-left: 75%;
+    font-size : 1.5em;
+    background-color: white;
+    padding: 3px;
+    display: flex;   /* Makes the content horizontal align*/
+    justify-content: space-around;
+    border: 2px solid black ;
+    width: 300px;
+    transition: 0.5s;
+    margin-bottom: 16px;
+  }
+  
+  .restautant-address{
+    display: absolute;
+    font-weight: bold;  /* Makes the text bold*/
+    text-transform: uppercase;
+  }
+  
+  /***** Restaurant's menu ******/
+  .restaurant-details{
+    border: 3px solid black;
+    padding: 15px;
+    width: 400px;
+    margin-left: 15px;
+    box-shadow: 0px 3px 24px rgb(177, 161, 143);
+  } 
+  
+  /* The menu text */
+  .restaurant-menu{
+    margin-left: 27%;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+    border: 2px solid red;
+    border-radius: 20%;
+    width: 150px;  /* width will control the border */
+    display: flex;    /* Aligns the X in the center of the red background */
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;  /* Makes the text bold*/
+  }
+  
+  .menu{
+    margin-left: 3%;
+    font-size : 1.5em;
+    /* position: relative; */
+    /* border: 1px solid red; */
+    text-decoration:underline;
+    background-color: white;
+    padding: 3px;
+    border-radius: 16px;
+    display: flex;   /* Makes the content horizontal align*/
+    justify-content: space-around;
+    width: 350px;
+    transition: 0.5s;
+    margin-bottom: 16px;
+    box-shadow: 0px 3px 24px rgb(243, 163, 65);
+  }
+  
+  /*****  For Restaurant's Reviews  *****/
+  .reviews-heading{
+    margin-left: 5%;
+    margin-bottom: -1.5%;
+  }
+  
+  .restaurant-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+  }
+  
+  .reviews{
+    border : 2px solid grey;
+    box-shadow: 0px 3px 24px bisque;
+    padding: 0px 0px 15px 20px;         /* top right bottom left */
+    margin-top: 2%;
+    width: 80%;
+  }
+  
+  .reviews:hover{
+    box-shadow: 0px 3px 24px rgb(243, 163, 65);
+  }
+  
+  
+  /*****  For Restaurant's Past Orders *****/
+  .orders-heading{
+    margin-left: 5%;
+    margin-bottom: -1.5%;
+  }
+  
+  .restaurant-orders{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+  }
+  
+  .orders{
+    border : 2px solid grey;
+    box-shadow: 0px 3px 24px bisque;
+    padding: 0px 0px 15px 20px;         /* top right bottom left */
+    padding: 1%;
+    margin-top: 2%;
+    width: 80%;
+  }
+  
+  .orders:hover{
+    box-shadow: 0px 3px 24px rgb(243, 163, 65);
+  }
+  
+  

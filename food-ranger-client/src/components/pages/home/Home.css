@@ -1,0 +1,80 @@
+/* Home.js Styles */
+.search{
+    max-width: 400px;
+    margin: 0% auto;   /* Centers the div, top margin is 20% and auto centers it horizontally */
+    text-align: center;
+    overflow: auto;    /* Important, This prevents the  Margin on child element to move with parent element */
+    /* While adding backgroud image there was a white space, which got fixed by this */
+    
+  }
+  
+  .search form{
+    margin: 20% auto;   /* Change this to move search bar, change the percentage value */
+  }
+  
+  .search label{
+    text-align: left;
+    display: block;
+    font-size: 2em;
+    color:black;
+    font-weight: bold;
+    /* filter: brightness(100000000%); */
+    font-weight: bold;  /* Makes the text bold*/
+    border: 3px solid red;
+    /* width: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    box-shadow: 0px 3px 24px rgb(199, 77, 21);
+  }
+  
+  .search input, .search select{
+     width: 100%;     /* Makes the text area box bigger i.e. width of 100% */
+     padding: 6px 10px;
+     margin: 10px 0;
+     border: 2px solid red;
+     box-sizing: border-box; 
+     display: block;
+  }
+  
+  .search input{
+    height: 50px;
+    width: 100%;
+    font-size: 1.25em;
+  }
+  
+  .search input:hover{
+    box-shadow: 0px 3px 24px white;
+  }
+  
+  .search button{
+    background :orangered;
+    color : white;
+    font-size: 1.5em;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .search button:hover{
+    box-shadow: 3px 3px 50px  white;
+  }
+  
+  .restaurant-search-result{
+    font-size : 1.5em;
+    position: relative;
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;   /* Makes the content horizontal align*/
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 16px;
+  } 
+  
+  .restaurant-search-result:hover{
+    opacity: 0.8;
+  }
