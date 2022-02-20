@@ -83,7 +83,8 @@ router.delete('/:id', async (req,res) => {
 // Finds the restaurants with specific id
 // This route will go to, /restaurants/:id
 // Adding verify, which will make the private routes
-//  router.get('/:id',verify, async (req,res) => {
+// Use below line, to add the middleware, that is verify
+// router.get('/:id',verify, async (req,res) => {
  router.get('/:id', async (req,res) => {
     try{
         const restaurant = await Restaurant.findById(req.params.id);  
