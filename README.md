@@ -8,12 +8,16 @@ I am using the MERN stack to develop this program.  Using Node and Express for t
 
 To run the code,<br>
 **First start the backend server by following command in the terminal,**
- - cd food-ranger-server
- - npm start
+```
+  cd food-ranger-server
+  npm start
+```
 
 **Now, start the frontend server by following command in the terminal,**
-- cd food-ranger-client
-- npm start
+```
+  cd food-ranger-client
+  npm start
+```
 
 The endpoints that I have implemented in my REST API includes the following,<br>
 
