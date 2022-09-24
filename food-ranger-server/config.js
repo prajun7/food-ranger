@@ -7,5 +7,7 @@ const config = {
     }
 };
 // check the connection string, check lastPass for mongoDB
+// Need to import this in index.js file and in login file where we are using DB_CONNECTION and TOKEN_SECRET
+// Need to replace proces.env variables
 
 module.exports = config;
